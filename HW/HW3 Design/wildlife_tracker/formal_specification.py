@@ -1,4 +1,10 @@
 from typing import Any, List, Optional
+from wildlife_tracker.habitat_management.habitat import Habitat
+from wildlife_tracker.animal_managment.animal import Animal
+from wildlife_tracker.migration_tracking.migration import Migration
+from wildlife_tracker.migration_tracking.migration_path import MigrationPath
+
+
 
 
 age: Optional[int] = None
@@ -28,43 +34,43 @@ status: str = "Scheduled"
 
 
 def assign_animals_to_habitat(animals: List[Animal]) -> None:
-    pass
+    pass #
 
 def assign_animals_to_habitat(habitat_id: int, animals: List[Animal]) -> None:
-    pass
+    pass #
 
 def cancel_migration(migration_id: int) -> None:
     pass
 
 def create_habitat(habitat_id: int, geographic_area: str, size: int, environment_type: str) -> Habitat:
-    pass
+    pass #
 
 def create_migration_path(species: str, start_location: Habitat, destination: Habitat, duration: Optional[int] = None) -> None:
     pass
 
 def get_animal_by_id(animal_id: int) -> Optional[Animal]:
-    pass
+    pass #
 
 def get_animal_details(animal_id) -> dict[str, Any]:
-    pass
+    pass #
 
 def get_animals_in_habitat(habitat_id: int) -> List[Animal]:
-    pass
+    pass #
 
 def get_habitat_by_id(habitat_id: int) -> Habitat:
-    pass
+    pass   # 
 
 def get_habitat_details(habitat_id: int) -> dict:
-    pass
+    pass #
 
 def get_habitats_by_geographic_area(geographic_area: str) -> List[Habitat]:
-    pass
+    pass #
 
 def get_habitats_by_size(size: int) -> List[Habitat]:
-    pass
+    pass #
 
 def get_habitats_by_type(environment_type: str) -> List[Habitat]:
-    pass
+    pass #
 
 def get_migration_by_id(migration_id: int) -> Migration:
     pass
@@ -106,28 +112,28 @@ def get_migration_path_details(path_id) -> dict:
     pass
 
 def register_animal(animal: Animal) -> None:
-    pass
+    pass #
 
 def remove_animal(animal_id: int) -> None:
-    pass
+    pass #
 
 def remove_habitat(habitat_id: int) -> None:
-    pass
+    pass #
 
 def remove_migration_path(path_id: int) -> None:
-    pass
+    pass #
 
 def schedule_migration(migration_path: MigrationPath) -> None:
-    pass
+    pass #
 
 def update_animal_details(animal_id: int, **kwargs: Any) -> None:
-    pass
+    pass #
 
 def update_habitat_details(habitat_id: int, **kwargs: dict[str, Any]) -> None:
-    pass
+    pass #
 
 def update_migration_details(migration_id: int, **kwargs: Any) -> None:
-    pass
+    pass #
 
 def update_migration_path_details(path_id: int, **kwargs) -> None:
-    pass
+    pass #
